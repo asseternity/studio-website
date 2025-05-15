@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   extends: ['eslint-config-prettier'],
+  base: '/studio-website',
 });
