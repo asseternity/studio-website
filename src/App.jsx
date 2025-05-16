@@ -1,15 +1,34 @@
+import Nav from './components/nav';
+import Logo from './components/logo';
+import Recent from './components/recent';
+import InfoCards from './components/infocards';
+import Gallery from './components/gallery';
+import Carousel from './components/carousel';
+
 function App() {
   return (
     <>
       <div className="header">
-        <div className="logo">Logo</div>
-        <div className="nav">Nav</div>
+        <div className="logo">
+          <Logo />
+        </div>
+        <div className="nav">
+          <Nav />
+        </div>
       </div>
-      <div className="banner">Banner</div>
+      <div className="banner">
+        <Carousel />
+      </div>
       <div className="boxes">
-        <div className="box1">Box 1</div>
-        <div className="box2">Box 2</div>
-        <div className="box3">Box 3</div>
+        <div className="box box1">
+          <Gallery />
+        </div>
+        <div className="box box2">
+          <Recent />
+        </div>
+        <div className="box box3">
+          <InfoCards />
+        </div>
       </div>
     </>
   );
