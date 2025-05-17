@@ -1,9 +1,48 @@
-import Nav from './components/nav';
 import Logo from './components/logo';
-import Recent from './components/recent';
-import InfoCards from './components/infocards';
-import Gallery from './components/gallery';
+import Nav from './components/nav';
 import Carousel from './components/carousel';
+import PreviewProjects from './components/preview_projects';
+import PreviewNews from './components/preview_news';
+import PreviewAbout from './components/preview_about';
+import test1 from '/test1.png';
+import test2 from '/test2.jpg';
+import test3 from '/test3.png';
+
+const testProjects = [
+  {
+    title: 'Project 1',
+    subtitle: 'This is test subtitle 1.',
+    image: test1,
+  },
+  {
+    title: 'Project 2',
+    subtitle: 'This is test subtitle 2.',
+    image: test2,
+  },
+  {
+    title: 'Project 3',
+    subtitle: 'This is test subtitle 3.',
+    image: test3,
+  },
+];
+
+const testNews = [
+  {
+    title: 'Devlog #12: Combat System Overhaul',
+    subtitle:
+      'We’ve redesigned the entire combat experience based on your feedback. Here’s what’s new!',
+  },
+  {
+    title: 'New Pixel Artist Joins the Team!',
+    subtitle:
+      'Say hello to Aria, who’s bringing a fresh look to our characters and environments.',
+  },
+  {
+    title: 'Alpha Testing Starts This June',
+    subtitle:
+      'We’re opening up early access to a small group of players — signups are now live!',
+  },
+];
 
 function App() {
   return (
@@ -17,17 +56,17 @@ function App() {
         </div>
       </div>
       <div className="banner">
-        <Carousel />
+        <Carousel slides={testProjects} />
       </div>
       <div className="boxes">
         <div className="box box1">
-          <Gallery />
+          <PreviewProjects projects={testProjects} />
         </div>
         <div className="box box2">
-          <Recent />
+          <PreviewNews news={testNews} />
         </div>
         <div className="box box3">
-          <InfoCards />
+          <PreviewAbout />
         </div>
       </div>
     </>

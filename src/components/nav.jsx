@@ -3,7 +3,7 @@ export default function Nav() {
     <>
       <button>Projects</button>
       <button>News</button>
-      <button>Contact</button>
+      <button>About</button>
     </>
   );
 }
