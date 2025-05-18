@@ -29,18 +29,28 @@ const testProjects = [
 const testNews = [
   {
     title: 'Devlog #12: Combat System Overhaul',
-    subtitle:
+    content:
       'We’ve redesigned the entire combat experience based on your feedback. Here’s what’s new!',
   },
   {
     title: 'New Pixel Artist Joins the Team!',
-    subtitle:
+    content:
       'Say hello to Aria, who’s bringing a fresh look to our characters and environments.',
   },
   {
     title: 'Alpha Testing Starts This June',
-    subtitle:
+    content:
       'We’re opening up early access to a small group of players — signups are now live!',
+  },
+  {
+    title: 'Devlog #11: Save System Overhaul',
+    content:
+      'We’ve redesigned the entire save experience based on your feedback. Here’s what’s new!',
+  },
+  {
+    title: 'Devlog #10: Dialogue System Overhaul',
+    content:
+      'We’ve redesigned the entire dialogue experience based on your feedback. Here’s what’s new!',
   },
 ];
 
@@ -74,3 +84,10 @@ function App() {
 }
 
 export default App;
+
+// [_] mobile / responsive
+// [_] finalize design
+// [_] create other tabs
+// [_] fill with actual content
+// [_] decide on a way to push
+// [_] publish to a domain
