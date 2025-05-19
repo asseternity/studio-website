@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Logo from './components/logo';
 import Nav from './components/nav';
 import Carousel from './components/carousel';
+import FullNews from './components/full_news';
+import FullAbout from './components/full_about';
 import PreviewProjects from './components/preview_projects';
 import PreviewNews from './components/preview_news';
 import PreviewAbout from './components/preview_about';
@@ -55,6 +58,8 @@ const testNews = [
 ];
 
 function App() {
+  const [activeTab, setActiveTab] = useState('projects');
+
   return (
     <>
       <div className="header">
@@ -62,11 +67,17 @@ function App() {
           <Logo />
         </div>
         <div className="nav">
-          <Nav />
+          <Nav
+            callback1={() => setActiveTab('projects')}
+            callback2={() => setActiveTab('news')}
+            callback3={() => setActiveTab('about')}
+          />
         </div>
       </div>
       <div className="banner">
-        <Carousel slides={testProjects} />
+        {activeTab === 'projects' && <Carousel slides={testProjects} />}
+        {activeTab === 'news' && <FullNews slides={testNews} />}
+        {activeTab === 'about' && <FullAbout />}
       </div>
       <div className="boxes">
         <div className="box box1">
@@ -85,9 +96,9 @@ function App() {
 
 export default App;
 
+// [_] create other tabs
 // [_] mobile / responsive
 // [_] finalize design
-// [_] create other tabs
 // [_] fill with actual content
 // [_] decide on a way to push
 // [_] publish to a domain

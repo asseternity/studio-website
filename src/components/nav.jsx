@@ -1,9 +1,9 @@
-export default function Nav() {
+export default function Nav({ callback1, callback2, callback3 }) {
   return (
     <>
-      <button>Projects</button>
-      <button>News</button>
-      <button>About</button>
+      <button onClick={callback1}>Projects</button>
+      <button onClick={callback2}>News</button>
+      <button onClick={callback3}>About</button>
     </>
   );
 }
