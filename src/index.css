@@ -73,16 +73,28 @@ div {
   color: white;
 }
 
-.carousel_buttons .active {
+.active {
   color: white;
   background-color: black;
 }
 
 /* FULL NEWS */
+.fn_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+.fn_slide {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 
 /* FULL ABOUT */
-
 
 /* PREVIEW PROJECTS */
 .preview_projects_content {

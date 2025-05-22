@@ -71,6 +71,7 @@ function App() {
             callback1={() => setActiveTab('projects')}
             callback2={() => setActiveTab('news')}
             callback3={() => setActiveTab('about')}
+            tab={activeTab}
           />
         </div>
       </div>
