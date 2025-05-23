@@ -195,3 +195,37 @@ div {
   align-items: start;
   padding: 3px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1050px) {
+  .box2 {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .profile_pics div {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 620px) {
+  html,
+  body,
+  #root {
+    height: auto;
+    overflow: auto;
+  }
+  .banner {
+    height: 330px;
+  }
+  .boxes {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    height: auto;
+  }
+}
