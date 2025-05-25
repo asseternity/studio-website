@@ -97,8 +97,8 @@ function App() {
 
 export default App;
 
-// [_] create other tabs
-// [_] mobile / responsive
+// [v] create other tabs
+// [v] mobile / responsive
 // [_] finalize design
 // [_] fill with actual content
 // [_] decide on a way to push
