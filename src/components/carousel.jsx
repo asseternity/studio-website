@@ -6,11 +6,21 @@ export default function Carousel({ slides }) {
   return (
     <div className="carousel_content">
       <div
-        className="carousel_slide"
-        style={{ backgroundImage: `url(${slides[slide].image})` }}
+        className="carousel_track"
+        style={{
+          transform: `translateX(-${slide * 100}%)`,
+        }}
       >
-        <h2>{slides[slide].title}</h2>
-        <p>{slides[slide].subtitle}</p>
+        {slides.map((slideObject, index) => (
+          <div
+            key={index}
+            className="carousel_slide"
+            style={{ backgroundImage: `url(${slideObject.image})` }}
+          >
+            <h2>{slideObject.title}</h2>
+            <p>{slideObject.subtitle}</p>
+          </div>
+        ))}
       </div>
       <div className="carousel_buttons">
         {slides.map((slideObject, index) => (
@@ -19,7 +29,7 @@ export default function Carousel({ slides }) {
             className={index == slide ? 'active' : ''}
             onClick={() => setSlide(index)}
           >
-            {index}
+            {index + 1}
           </button>
         ))}
       </div>

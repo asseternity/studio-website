@@ -64,13 +64,28 @@ div {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel_track {
+  display: flex;
+  justify-content: flex-start; /* stop horizontal centering */
+  align-items: flex-start;
+  transition: transform 0.5s ease;
+  height: 100%;
 }
 
 .carousel_slide {
-  flex-grow: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
   color: white;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .active {
