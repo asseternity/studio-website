@@ -4,7 +4,7 @@ export default function PreviewNews({ news = [] }) {
   const [lastFiveNews, setLastFiveNews] = useState([]);
 
   useEffect(() => {
-    setLastFiveNews(news.slice(0, 4));
+    setLastFiveNews(news.slice(0, 3));
   }, [news]);
 
   return (

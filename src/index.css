@@ -1,4 +1,4 @@
-/* FONTS AND TEXT */
+/* COLORS, FONTS AND TEXT */
 h1,
 h2,
 h4,
@@ -6,8 +6,46 @@ p {
   margin: 3px 0;
 }
 
-/* LAYOUT */
+@font-face {
+  font-family: 'Space';
+  src: url('/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
+:root {
+  --main: #537d5d;
+  --second: #73946b;
+  --third: #9ebc8a;
+  --fourth: #d2d0a0;
+}
+
+/* GENERAL */
+div {
+  font-family: 'Space';
+  background-color: var(--fourth);
+  color: var(--main);
+}
+
+/* BUTTONS */
+button {
+  background-color: var(--second);
+  border: solid 1px var(--second);
+  color: var(--fourth);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: var(--main);
+}
+
+.active {
+  color: var(--second);
+  background-color: var(--fourth);
+}
+
+/* LAYOUT */
 #root,
 .root,
 html,
@@ -86,11 +124,6 @@ div {
   background-position: center;
   padding: 2rem;
   box-sizing: border-box;
-}
-
-.active {
-  color: white;
-  background-color: black;
 }
 
 /* FULL NEWS */
@@ -202,6 +235,7 @@ div {
 .profile_pics div {
   height: 100px;
   width: 100px;
+  transition: transform 0.5s ease;
 }
 
 .selected {
@@ -253,6 +287,9 @@ div {
   }
   .box {
     height: auto;
+  }
+  .preview_projects_cards {
+    height: 212px;
   }
   .preview_about {
     align-items: stretch;

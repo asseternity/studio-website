@@ -99,10 +99,12 @@ export default App;
 
 // [v] create other tabs
 // [v] mobile / responsive
-// [_] animations - carousel
+// [v] animations - carousel
+// [v] animations - about preview
+// [v] mobile project preview doesn't maintain size
 // [_] animations - projects preview
-// [_] animations - about preview
-// [_] finalize design
+// [_] finalize design - pick and set color vars in css
+// [_] finalize design - pick and set fonts
 // [_] fill with actual content
 // [_] decide on a way to push
 // [_] publish to a domain
