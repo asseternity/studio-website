@@ -4,7 +4,7 @@ import Nav from './components/nav';
 import Carousel from './components/carousel';
 import FullNews from './components/full_news';
 import FullAbout from './components/full_about';
-import PreviewProjects from './components/preview_projects';
+import NewPreviewProjects from './components/new_preview_projects';
 import PreviewNews from './components/preview_news';
 import PreviewAbout from './components/preview_about';
 import test1 from '/test1.png';
@@ -82,7 +82,7 @@ function App() {
       </div>
       <div className="boxes">
         <div className="box box1">
-          <PreviewProjects projects={testProjects} />
+          <NewPreviewProjects projects={testProjects} />
         </div>
         <div className="box box2">
           <PreviewNews news={testNews} />
@@ -102,9 +102,10 @@ export default App;
 // [v] animations - carousel
 // [v] animations - about preview
 // [v] mobile project preview doesn't maintain size
-// [_] animations - projects preview
-// [_] finalize design - pick and set color vars in css
-// [_] finalize design - pick and set fonts
+// [v] animations - projects preview
+// [v] finalize design - pick and set color vars in css
+// [v] finalize design - pick and set fonts
+// [_] finish design further
 // [_] fill with actual content
 // [_] decide on a way to push
 // [_] publish to a domain
