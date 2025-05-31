@@ -105,6 +105,7 @@ export default App;
 // [v] animations - projects preview
 // [v] finalize design - pick and set color vars in css
 // [v] finalize design - pick and set fonts
+// [_] nav div doesn't stretch fully
 // [_] finish design further
 // [_] fill with actual content
 // [_] decide on a way to push

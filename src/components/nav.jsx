@@ -8,25 +8,25 @@ export default function Nav({ callback1, callback2, callback3, tab }) {
   }, [tab]);
 
   return (
-    <>
+    <div className="nav_inner">
       <button
         onClick={callback1}
         className={activeTab === 'projects' ? 'active' : ''}
       >
-        Projects
+        PROJECTS
       </button>
       <button
         onClick={callback2}
         className={activeTab === 'news' ? 'active' : ''}
       >
-        News
+        NEWS
       </button>
       <button
         onClick={callback3}
         className={activeTab === 'about' ? 'active' : ''}
       >
-        About
+        ABOUT
       </button>
-    </>
+    </div>
   );
 }
