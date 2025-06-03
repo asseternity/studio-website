@@ -102,6 +102,10 @@ div {
 }
 
 /* LOGO */
+.logo {
+  width: 100%;
+}
+
 .logo_inner {
   display: flex;
   flex-direction: column;
@@ -112,17 +116,18 @@ div {
 
 /* NAV */
 .nav {
+  flex-grow: 1;
   width: 100%;
   font-weight: bold;
   font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  padding-right: 75px;
 }
 
 .nav_inner {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 75px;
 }
 
 /* CAROUSEL */
