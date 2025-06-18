@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Logo from './components/logo';
 import Nav from './components/nav';
-import Carousel from './components/carousel';
+import FullCarousel from './components/full_carousel';
 import FullNews from './components/full_news';
 import FullAbout from './components/full_about';
 import NewPreviewProjects from './components/new_preview_projects';
@@ -76,7 +76,7 @@ function App() {
         </div>
       </div>
       <div className="banner">
-        {activeTab === 'projects' && <Carousel slides={testProjects} />}
+        {activeTab === 'projects' && <FullCarousel slides={testProjects} />}
         {activeTab === 'news' && <FullNews slides={testNews} />}
         {activeTab === 'about' && <FullAbout />}
       </div>
@@ -108,5 +108,4 @@ export default App;
 // [v] nav div doesn't stretch fully
 // [_] finish design further
 // [_] fill with actual content
-// [_] decide on a way to push
 // [_] publish to a domain
