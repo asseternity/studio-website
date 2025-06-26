@@ -106,7 +106,7 @@ export default App;
 // [v] finalize design - pick and set color vars in css
 // [v] finalize design - pick and set fonts
 // [v] nav div doesn't stretch fully
-// [_] publish to github pages
+// [v] publish to github pages
 // [_] finish design further
 // [_] fill with actual content
 // [_] publish to a domain
